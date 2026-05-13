@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>舆情报告归档</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --text: #20242a;
+      --muted: #68707c;
+      --line: #dfe3e8;
+      --accent: #1f6feb;
+      --accent-dark: #174ea6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    header {
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    .summary {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 28px 0;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .button.primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .button:hover {
+      border-color: var(--accent-dark);
+      color: var(--accent-dark);
+    }
+
+    .button.primary:hover {
+      background: var(--accent-dark);
+      color: #ffffff;
+    }
+
+    .report-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .report-item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 18px;
+    }
+
+    .report-title {
+      display: inline-block;
+      margin-bottom: 6px;
+      color: var(--accent);
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .report-title:hover {
+      color: var(--accent-dark);
+      text-decoration: underline;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>舆情报告归档</h1>
+      <p class="summary">用于集中保存公开 HTML 报告。根目录链接保留为当前报告入口，每份归档报告拥有独立稳定链接。</p>
+    </header>
+
+    <nav class="toolbar" aria-label="常用入口">
+      <a class="button primary" href="../">查看当前报告</a>
+      <a class="button" href="./2026-05-13-four-products-yuqing/">查看本次归档报告</a>
+    </nav>
+
+    <ul class="report-list">
+      <li class="report-item">
+        <a class="report-title" href="./2026-05-13-four-products-yuqing/">三国杀四款产品 · 2026五一假期舆情分析报告</a>
+        <p class="meta">发布日期：2026-05-13 · 路径：reports/2026-05-13-four-products-yuqing/</p>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
